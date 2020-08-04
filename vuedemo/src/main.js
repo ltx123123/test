@@ -5,11 +5,16 @@ import App from './App'
 import router from './router'
 import 'vue-awesome/icons'
 import  Icon from 'vue-awesome/components/Icon'
-import iView from 'iview';
-import 'iview/dist/styles/iview.css';    // 使用 CSS
 
+import 'view-design/dist/styles/iview.css';    // 使用 CSS
+
+// import { Switch, circle } from 'iview'
+
+import iView from 'view-design';
 Vue.use(iView);
-Vue.component('icon',Icon)
+Vue.component('icon',Icon);
+// vue.component('i-switch',Switch);
+// vue.component('i-circle',circle);
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
@@ -19,3 +24,4 @@ new Vue({
   components: { App },
   template: '<App/>'
 })
+
